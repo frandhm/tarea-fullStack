@@ -3,9 +3,12 @@
     margin: 0;
 }
 body { 
-    background: #f7fafc;
+    background: #ebebeb;
     font-family: Arial;
     font-size: 10px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -71,4 +74,187 @@ nav a:hover {
 .logo-link:hover {
     color: #1c2541;
     background: none;
+}
+
+.card {
+      background: #e3f0ff;
+      color: #3a506b;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.producto-container {
+      display: grid;
+      gap: 15px;
+      margin-bottom: 40px;
+      background: #e0e0e0;
+      padding: 15px;
+      border-radius: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#Inicio {
+    background: #e3f0ff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 6px 24px rgba(58, 80, 107, 0.12);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#Inicio h2 {
+    color: #3a506b;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#Inicio h3 {
+    color: #1c2541;
+    font-size: 1.3rem;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#Inicio p {
+    color: #1c2541;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+#Inicio div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer {
+    background: #1c2541;
+    color: #e3f0ff;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    border-radius: 0;
+    box-shadow: 0 -2px 12px rgba(58, 80, 107, 0.10);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
+    word-break: break-word;
+    padding: 0 12px;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+#contacto-form {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #e3f0ff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(58,80,107,0.10);
+}
+
+#contacto-form h2 {
+    color: #3a506b;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#contacto-form label {
+    color: #1c2541;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+#contacto-form input,
+#contacto-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bfe0ff;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    background: #fff;
+    resize: vertical;
+}
+
+#contacto-form button {
+    background: #3a506b;
+    color: #e3f0ff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+#contacto-form button:hover {
+    background: #1c2541;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.95rem;
+        padding: 16px 0;
+    }
+    footer p {
+        padding: 0 6px;
+    }
+    #contacto-form {
+        max-width: 98vw;
+        padding: 18px 6px;
+        border-radius: 8px;
+        margin: 20px auto;
+    }
+    #contacto-form h2 {
+        font-size: 1.3rem;
+    }
+    #contacto-form input,
+    #contacto-form textarea {
+        font-size: 0.95rem;
+        padding: 7px;
+    }
+    #contacto-form button {
+        font-size: 0.95rem;
+        padding: 8px 12px;
+    }
 }

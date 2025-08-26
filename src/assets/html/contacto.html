@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Store</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../../src/assets/css/style.css">
 </head>
 <body>
     <nav>
         <div class="nav-container">
-            <h1 class="title-container"><a class="logo-link" href="../src/index.html">VíaOnline</a></h1>
+            <h1 class="title-container"><a class="logo-link" href="../src/index.html">Pets Store</a></h1>
             <ul>
-                <li><a href="../html/inicio.html">INICIO</a></li>
-                <li><a href="../html/productos.html">PRODUCTOS</a></li>
-                <li><a href="../html/contacto.html">CONTACTO</a></li>
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href="../../index.html">PRODUCTOS</a></li>
+                <li><a href="">CONTACTO</a></li>
             </ul>
         </div>
     </nav>
+
     <main>
+        <section id="contacto-form" style="max-width: 500px; margin: 40px auto; background: #e3f0ff; padding: 32px 24px; border-radius: 16px; box-shadow: 0 4px 18px rgba(58,80,107,0.10);">
+            <h2 style="color: #3a506b; margin-bottom: 18px; text-align: center;">Contáctanos</h2>
+            <form>
+                <label for="nombre" style="color: #1c2541; font-weight: bold;">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required style="width: 100%; padding: 8px; margin-bottom: 16px; border-radius: 6px; border: 1px solid #bfe0ff;">
 
+                <label for="email" style="color: #1c2541; font-weight: bold;">Email</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 16px; border-radius: 6px; border: 1px solid #bfe0ff;">
+
+                <label for="mensaje" style="color: #1c2541; font-weight: bold;">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #bfe0ff;"></textarea>
+
+                <button type="submit" style="background: #3a506b; color: #e3f0ff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s;">
+                    Enviar
+                </button>
+            </form>
+        </section>
     </main>
+    
     <footer>
-
+        <p>&copy; 2024 Pets Store. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
