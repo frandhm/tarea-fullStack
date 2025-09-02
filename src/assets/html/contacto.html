@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets Store</title>
     <link rel="stylesheet" href="../../../src/assets/css/style.css">
+    <script src="../../../src/assets/js/script.js"></script>
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <h1 class="title-container"><a class="logo-link" href="../src/index.html">Pets Store</a></h1>
             <ul>
-                <li><a href="../../index.html">INICIO</a></li>
-                <li><a href="../../index.html">PRODUCTOS</a></li>
-                <li><a href="">CONTACTO</a></li>
+                <li><a href="../../index.html">Productos</a></li>
+                <li><a href="../../assets/html/estadistica.html">Estadisticas</a></li>
+                <li><a href="../../assets/html/contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -31,7 +32,7 @@
                 <label for="mensaje" style="color: #1c2541; font-weight: bold;">Mensaje</label>
                 <textarea id="mensaje" name="mensaje" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 20px; border-radius: 6px; border: 1px solid #bfe0ff;"></textarea>
 
-                <button type="submit" style="background: #3a506b; color: #e3f0ff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s;">
+                <button onclick="return validacion()" type="submit" style="background: #3a506b; color: #e3f0ff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s;">
                     Enviar
                 </button>
             </form>
@@ -41,5 +42,6 @@
     <footer>
         <p>&copy; 2024 Pets Store. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
